@@ -41,6 +41,7 @@ export default function Home({ breweries }) {
   );
 }
 
+// Using getStaticProps to pre-render data on page
 export const getStaticProps = async () => {
   const res = await fetch(
     "https://api.openbrewerydb.org/breweries?by_state=massachusetts"

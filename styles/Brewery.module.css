@@ -1,0 +1,10 @@
+.breweries {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 1rem;
+  width: 100%;
+}
+
+.brewery {
+  border: 1px solid black;
+}

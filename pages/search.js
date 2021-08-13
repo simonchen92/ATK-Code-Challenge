@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import BreweryItem from "../components/BreweryItem";
 import breweryStyles from "../styles/Brewery.module.css";
 import searchStyles from "../styles/Search.module.css";
 
@@ -24,14 +25,8 @@ const Search = () => {
   // Display Breweries based off Search Value
   const breweriesArr = breweries.map((brewery, index) => {
     return (
-      <div className={breweryStyles.brewery} key={index}>
-        <h1>{brewery.name}</h1>
-        <p>{brewery.street}</p>
-        <p>{`${brewery.city}, ${brewery.state}`}</p>
-        <p>Phone Number: {brewery.phone}</p>
-        <a href={brewery.website_url} target="_blank" rel="noreferrer">
-          {brewery.website_url}
-        </a>
+      <div key={index}>
+      <BreweryItem brewery={brewery} />
       </div>
     );
   });

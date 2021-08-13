@@ -1,0 +1,14 @@
+.bttnContainer {
+    display: flex;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.bttnCategory {
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 1rem;
+    cursor: pointer;
+}
